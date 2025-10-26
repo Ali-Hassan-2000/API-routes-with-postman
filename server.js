@@ -19,7 +19,7 @@ mongoose.connection.on('connected', () => {
 
 app.use(express.json());
 app.use(logger('dev'));
-app.use(cors({ origin: 'http://localhost:3000' }));
+app.use(cors({ origin: 'http://localhost:5173' })); //port 5173 for API sorce
 // ------------------------------------------ SETUP
 
 app.use('/pets', petRouter);
