@@ -78,7 +78,7 @@ router.put('/:petId', async (req, res) => {
             throw new Error('Pet not found.');
         }
         
-        res.status(201);
+        res.status(200).json(updatedPet);
   
     } catch (err) {
 
